@@ -3,6 +3,7 @@ package compare
 import "reflect"
 
 func CompareStruct(x, y any) (identical bool) {
+
 	valX := reflect.ValueOf(x)
 	valY := reflect.ValueOf(y)
 	typeX := reflect.TypeOf(x)
@@ -32,4 +33,5 @@ func CompareStruct(x, y any) (identical bool) {
 	}
 
 	return true
+
 }
